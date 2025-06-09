@@ -1,0 +1,31 @@
+.box {
+    width: 12vw;
+    height: 25vh;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box1 {
+    border: solid black;
+    border-width: 3px;
+}
+
+.box2 {
+    border-style: dashed;
+    border-color: black;
+}
+
+.box3 {
+    border-color: blue;
+    border-style: solid;
+}
+
+.box4 {
+    border-radius: 50%;
+    border-color: brown;
+    border-style: double;
+}

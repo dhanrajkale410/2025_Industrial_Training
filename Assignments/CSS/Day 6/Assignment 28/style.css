@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 3px;
+}
+h1 {
+    background-color: aquamarine;
+}
+
+h2 {
+    background-color: aliceblue;
+}
+
+.normal p {
+    font-weight: normal;
+}
+
+.bold p {
+    font-weight: bold;
+}
+
+.lighter p {
+    font-weight: lighter;
+}
+
+.bolder p {
+    font-weight: bolder;
+}
+
+.default {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff8dc;
+    border-left: 4px solid #ffa500;
+}

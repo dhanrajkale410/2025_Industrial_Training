@@ -1,0 +1,42 @@
+/* 1. Create 3 paragraphs inside a div.
+2. Use text-align: left, center, and right for each.
+3. Add a heading with text-align: justify.
+4. Add a note: “Difference between justify and center.” --> */
+
+.text-align-demo {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.justify-heading {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.left {
+    text-align: left;
+    background-color: #f0f8ff;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    background-color: #e6ffe6;
+    padding: 10px;
+}
+
+.right {
+    text-align: right;
+    background-color: #fff0f5;
+    padding: 10px;
+}
+
+.note {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff8dc;
+    border-left: 4px solid #ffa500;
+}

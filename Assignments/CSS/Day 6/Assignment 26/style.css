@@ -1,0 +1,26 @@
+/* Style applied to parent */
+.parent {
+    font-size: 20px;
+    color: red;
+    border: 2px solid gray; /* Not inherited */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Optional: Styling to highlight span */
+.parent span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Table for inheritance testing */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black; /* Not inherited */
+    padding: 8px;
+}

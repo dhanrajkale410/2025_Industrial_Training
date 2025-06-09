@@ -1,0 +1,7 @@
+s1 = int(input("Enter Marks of Java : "))
+s2 = int(input("Enter Marks of Python : "))
+s3 = int(input("Enter Marks of C++ : "))
+total_marks = (s1+s2+s3)
+print("Total of 3 Subjects :",total_marks)
+avg = (total_marks/3.0)
+print("Average Marks of 3 Subjects :",avg)

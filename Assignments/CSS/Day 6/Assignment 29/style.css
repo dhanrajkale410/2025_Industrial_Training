@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 600px;
+    margin: 30px auto;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.static-box {
+    position: static;
+    background-color: crimson;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: steelblue;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: green;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: darkorange;
+    z-index: 999;
+}

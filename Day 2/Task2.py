@@ -1,0 +1,5 @@
+name = input("Enter Your Name : ")
+age = int(input("Enter your Age : "))
+print("=== INFORMATION ===")
+print("Name : ",name)
+print("Age : ",age)

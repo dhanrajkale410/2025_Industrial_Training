@@ -1,0 +1,27 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headings {
+    background-color: bisque;
+    color: brown;
+}
+.btn1 {
+    padding: 5px;
+    border: 2px solid blue;
+    display: inline;
+}
+
+.btn2 {
+    padding: 7px;
+    border: 2px solid red;
+    display: block;
+}
+
+.btn3 {
+    padding: 3px;
+    border: 2px solid gold;
+    display: inline-block;
+}
+

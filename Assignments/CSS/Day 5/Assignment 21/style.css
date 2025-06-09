@@ -1,0 +1,13 @@
+/* External CSS: Style the button with padding, background color, hover effect, and border radius using a linked .css file. --> */
+button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: blue;
+}

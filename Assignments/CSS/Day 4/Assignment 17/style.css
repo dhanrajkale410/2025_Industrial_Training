@@ -1,0 +1,28 @@
+.gradeA {
+    background-color: #d4edda;
+    /* light green */
+    padding: 8px;
+    margin: 4px 0;
+}
+
+.gradeB {
+    background-color: #fff3cd;
+    /* light yellow */
+    padding: 8px;
+    margin: 4px 0;
+}
+
+/* Attribute selectors for input fields */
+input[type="text"] {
+    border: 2px solid #007bff;
+    padding: 6px;
+    margin: 5px 0;
+    display: block;
+}
+
+input[type="email"] {
+    border: 2px solid #28a745;
+    padding: 6px;
+    margin: 5px 0;
+    display: block;
+}
