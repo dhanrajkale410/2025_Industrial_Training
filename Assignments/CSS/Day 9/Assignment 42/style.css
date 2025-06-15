@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(#111, #000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+/* Hidden checkbox to trigger animation */
+#launchToggle {
+    display: none;
+}
+
+.label-container {
+    font-size: 7rem;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(-45deg);
+    /* Rotate rocket upward */
+    transition: transform 0.3s ease;
+}
+
+#launchToggle:checked+.label-container {
+    animation: launchUp 2s ease-out forwards;
+}
+
+@keyframes launchUp {
+      0% {
+        transform: rotate(-45deg) translate(0, 0);
+      }
+      100% {
+        transform: rotate(-45deg) translate(500px, -500px);
+        opacity: 0;
+      }
+    }

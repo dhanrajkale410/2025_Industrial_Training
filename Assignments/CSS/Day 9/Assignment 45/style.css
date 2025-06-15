@@ -1,0 +1,65 @@
+/* Assignment 5: "Disco Light Box"
+Topics: 2D transform, rotate, background-color, animation
+Task:
+Make a square div that rotates like a disco light and changes colors while spinning.
+ Hint:
+Use multiple keyframe steps with different background-color and rotate(). */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.disco-light {
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 2rem;
+    position: relative;
+    transform: rotate(0deg);
+    animation: disco-evolve 4s linear infinite;
+}
+
+@keyframes disco-evolve {
+    0% {
+        .disco-light {
+            background-color: magenta;
+            transform: rotate(0deg);
+        }
+    }
+
+    25% {
+        .disco-light {
+            transform: rotate(90deg);
+            background-color: cyan;
+        }
+    }
+
+    50% {
+        .disco-light {
+            transform: rotate(120deg);
+            background-color:yellow;
+        }
+    }
+
+    75% {
+        transform: rotate(180deg);
+        background-color: lime;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: magenta;
+    }
+}

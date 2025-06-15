@@ -1,0 +1,48 @@
+/* <!-- Assignment 3: "Juice Glass Filling Up"
+Topics: translateY, scaleY, animation
+ Task:
+Design a glass div and fill it with "juice" by animating a colored div from the bottom up.
+Hint:
+•	Use transform-origin: bottom; and scaleY() to simulate the fill effect --> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+.glass {
+    width: 10rem;
+    height: 20rem;
+    border: 2px solid black;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #5f5d5daf;
+}
+
+.juice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    bottom: 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    animation: fill-juice 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fill-juice {
+    to {
+        transform: scaleY(1);
+    }
+}

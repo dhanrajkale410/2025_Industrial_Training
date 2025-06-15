@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.mood-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.mood-container::after {
+    content: "😊 Big Screen Vibes!";
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Large screen: Blue + Big Screen Mood */
+@media (min-width: 1025px) {
+    .mood-container {
+        background-color: #3498db;
+        /* Blue */
+    }
+
+    .mood-container::after {
+        content: "😊 Big Screen Vibes!";
+    }
+}
+
+/* Tablet: Yellow + Medium Mood */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mood-container {
+        background-color: #f1c40f;
+        /* Yellow */
+    }
+
+    .mood-container::after {
+        content: "😌 Medium Mood Energy!";
+        color: #333;
+    }
+}
+
+/* Mobile: Red + Small Mood */
+@media (max-width: 767px) {
+    .mood-container {
+        background-color: #e74c3c;
+        /* Red */
+    }
+
+    .mood-container::after {
+        content: "🔥 Feeling Fiery on Mobile!";
+    }
+}

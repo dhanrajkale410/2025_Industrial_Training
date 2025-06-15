@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+}
+
+.model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Model Body Parts */
+.model-head {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-body {
+  width: 6rem;
+  height: 12rem;
+  background-color: chocolate;
+}
+
+.model-hand {
+  width: 18rem;
+  height: 2rem;
+  background-color: chocolate;
+}
+
+.model-leg {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.model-leg .left,
+.model-leg .right {
+  width: 2rem;
+  height: 8rem;
+  background-color: chocolate;
+}
+
+/* Clothing items - hidden by default */
+.hat,
+.scarf,
+.sunglasses {
+  display: none;
+}
+
+/* Desktop - Hat visible */
+@media (min-width: 1025px) {
+  .hat {
+    width: 6rem;
+    height: 5rem;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-bottom: -3rem;
+  }
+}
+
+/* Tablet - Scarf visible */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .scarf {
+    width: 6rem;
+    height: 2rem;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Mobile - Sunglasses visible */
+@media (max-width: 767px) {
+  .sunglasses {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    border-radius: 2rem;
+  }
+}

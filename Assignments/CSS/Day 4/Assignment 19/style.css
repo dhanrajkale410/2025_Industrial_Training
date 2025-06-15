@@ -1,20 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .card {
-    height: 30em;
-    width: 20em;
+    height: 32rem;
+    width: 18rem;
     background-color: rgb(255, 102, 0);
     border-radius: 2%;
-    padding: 10px;
-    margin: 5px;
-    position: absolute;
+    padding: 2rem 2rem;
+    margin: 1.5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #virat {
-    width: 19em;
+    width: 100%;
     border-radius: 2%;
-    margin: 6px;
-    padding: 1px;
-    box-sizing: border-box;
-    
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .info {

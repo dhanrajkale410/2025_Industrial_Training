@@ -1,0 +1,72 @@
+/* Assignment 3: Responsive Art Frame
+Topics: Media Queries, Font-size, Padding, Layout
+
+Task:
+Design a framed inspirational quote. Make the frame adjust in size and the font become smaller or bigger based on the screen size.
+
+Hint:
+Use different font-size, padding, and margin rules inside media queries */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.art-frame {
+    margin: 10rem;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    border: 2rem double brown;
+}
+
+.art-frame h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.art-frame p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    .frame {
+        font-size: 2.5rem;
+        padding: 4rem;
+        margin: 3rem;
+        border-width: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .frame {
+        font-size: 2rem;
+        padding: 3rem;
+        margin: 2rem;
+        border-width: 12px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .frame {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        margin: 1rem;
+        border-width: 8px;
+    }
+}

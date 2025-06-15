@@ -1,0 +1,62 @@
+/* <!-- Assignment 5: Packing a Box
+Topics: Media Queries, Flexbox/Grid, Responsive Columns
+
+Task:
+Create a box with 6 items inside. On desktop, show all in one row. On tablet, display in two rows of three. On mobile, show in a single column.
+
+Hint:
+Use display: flex with flex-wrap, or grid-template-columns with different media query breakpoints. --> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Desktop: 6 columns */
+@media (min-width: 1025px) {
+    .box {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Tablet: 3 columns x 2 rows */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+    .box {
+        grid-template-columns: 1fr;
+    }
+}
