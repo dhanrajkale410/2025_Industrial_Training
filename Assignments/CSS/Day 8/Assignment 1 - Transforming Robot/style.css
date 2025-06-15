@@ -8,6 +8,7 @@
 section {
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -89,6 +90,6 @@ section {
 
 @media screen and (max-width: 600px) {
     section {
-    transform: rotateX(90deg);
+    transform: rotateY(-90deg);
     }
 }
