@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    min-width: 8rem;
+    min-height: 8rem;
+    padding: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    color: pointer;
+
+}
+
+.grandparent{
+    background: #A9B5DF;
+    color: black;
+}
+
+.parent{
+    background: #7886C7;
+}
+
+.child{
+    background: #2D336B;
+}
