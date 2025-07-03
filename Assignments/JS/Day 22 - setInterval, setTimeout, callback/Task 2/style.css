@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:aquamarine;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:wheat;
+    width: 30rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.container h3 {
+    font-size: 3rem;
+}
